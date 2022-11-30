@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7727016156354757816}
   - component: {fileID: 2131914964801172826}
   m_Layer: 6
-  m_Name: PinkGirl
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
