@@ -1273,9 +1273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chars:
   - {fileID: 6464609916233744528, guid: 036b2384f1dccda4c9676f256bb65fab, type: 3}
-  spawnPoints:
-  - {fileID: 837863485}
-  - {fileID: 0}
   amountToPool: 0
 --- !u!4 &1088742199
 Transform:

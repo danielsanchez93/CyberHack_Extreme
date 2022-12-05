@@ -5,7 +5,6 @@ using UnityEngine;
 public class CharPooler : MonoBehaviour
 {
     [SerializeField] GameObject[] chars;
-    [SerializeField] Transform[] spawnPoints;
 
     [SerializeField] int amountToPool;
 

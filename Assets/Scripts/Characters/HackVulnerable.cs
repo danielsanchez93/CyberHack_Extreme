@@ -11,6 +11,7 @@ public class HackVulnerable : MonoBehaviour
     [Header("Hack Bar")]
     [SerializeField] GameObject hackBar;
     [SerializeField] GameObject hackEffect;
+    [SerializeField] ParticleSystem particleSystem;
     [SerializeField] Image barFill;
     [Header("Control variables")]
     [SerializeField] float duration = 0;
@@ -61,6 +62,7 @@ public class HackVulnerable : MonoBehaviour
         canBeHacked = false;
         hackBar.SetActive(false);
         hackEffect.SetActive(false);
+        particleSystem.Play();
     }
 
     public void ResetVulnerabilities()
