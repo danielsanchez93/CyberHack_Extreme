@@ -10,6 +10,7 @@ public class HackVulnerable : MonoBehaviour
     [SerializeField] float hackTime = 2;
     [Header("Hack Bar")]
     [SerializeField] GameObject hackBar;
+    [SerializeField] GameObject hackEffect;
     [SerializeField] Image barFill;
     [Header("Control variables")]
     [SerializeField] float duration = 0;
@@ -39,7 +40,11 @@ public class HackVulnerable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(canBeHacked) hackBar.SetActive(true);
+        if (canBeHacked) {
+            hackBar.SetActive(true);
+            hackEffect.SetActive(true);        
+        } 
+        
         isMouseIn = true;
     }
 
@@ -47,6 +52,7 @@ public class HackVulnerable : MonoBehaviour
     {
         isMouseIn = false;
         hackBar.SetActive(false);
+        hackEffect.SetActive(false);
     }
 
     private void CompletedHack()
@@ -54,6 +60,7 @@ public class HackVulnerable : MonoBehaviour
         Debug.Log("Hack Completed");
         canBeHacked = false;
         hackBar.SetActive(false);
+        hackEffect.SetActive(false);
     }
 
     public void ResetVulnerabilities()
