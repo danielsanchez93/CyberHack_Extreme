@@ -39,29 +39,10 @@ public class CharPooler : MonoBehaviour
         return temp;
     }
 
-
-    [ContextMenu("Spawn Char")]
-    public void SpawnNewChar()
-    {
-        GameObject go = Instantiate(GetRandomChar(), GetRandomSpawnPoint(), Quaternion.identity, transform);
-        go.GetComponent<CharMovement>()?.InitializeCharacter();
-        go.GetComponent<HackVulnerable>()?.ResetVulnerabilities();
-        pooledChars.Add(go);
-
-    }
-
     private GameObject GetRandomChar()
     {
         int ran = Random.Range(0,chars.Length);
         return chars[ran];
-    }
-
-    private Vector3 GetRandomSpawnPoint()
-    {
-        int ran = Random.Range(0,spawnPoints.Length);
-        float posY = Random.Range(-0.59f,-3.8f);
-        Vector3 newPos = new Vector3(spawnPoints[ran].position.x,posY,0);
-        return newPos;
     }
 
     public void ResetChar(GameObject character)

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6464609916233744541}
   - component: {fileID: 7727016156354757816}
   - component: {fileID: 2131914964801172826}
+  - component: {fileID: 4478654612568332659}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -142,7 +143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  isFlip: 0
 --- !u!114 &4432682523597336862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +231,25 @@ MonoBehaviour:
   m_CategoryHash: 0
   m_labelHash: 0
   m_SpriteKey: 0
+--- !u!114 &4478654612568332659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464609916233744528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d183fdd8099162448a88abf80f65a4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteLibraries:
+  - {fileID: 7108339969198208228, guid: 62edf30d6692ad440bd800ea9801d69f, type: 3}
+  - {fileID: 7108339969198208228, guid: 4cb5f17a47ceddf4fadd44219d3f4cda, type: 3}
+  - {fileID: 7108339969198208228, guid: dfba2997d0b72a04a8a79eedc1892326, type: 3}
+  - {fileID: 7108339969198208228, guid: d2756b2452aba4b4e92d4d1d88b643fa, type: 3}
+  - {fileID: 7108339969198208228, guid: fef6975d8e778a74d9d9e00a2d10d13d, type: 3}
+  - {fileID: 7108339969198208228, guid: 0fed665c6012d354db35471148c88b01, type: 3}
 --- !u!1 &6464609916501606386
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: 2, y: 0.3856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6464609917189147906
